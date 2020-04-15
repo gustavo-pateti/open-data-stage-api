@@ -1,0 +1,32 @@
+{
+  "name": "open-data-stage-api",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "none",
+  "author": "Gustavo Pateti <gpateti@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist",
+    "serve": "SET \"NODE_ENV=production\" && node dist/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.4"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "cuid": "^2.1.8",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.10.0",
+    "regenerator-runtime": "^0.13.5",
+    "stripe": "^8.41.0"
+  }
+}
