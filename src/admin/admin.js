@@ -19,7 +19,7 @@ const serviceAccount = {
 const databaseURL = process.env[`${prefix}_DATABASE_URL`];
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.cert(JSON.stringify(serviceAccount)),
   databaseURL: process.env.DATABASE_URL,
 });
 
